@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B752C33FB98003E396B /* AppDelegate.swift */; };
+		BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B772C33FB98003E396B /* SceneDelegate.swift */; };
+		BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B792C33FB98003E396B /* ViewController.swift */; };
+		BDF50B7F2C33FB99003E396B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF50B7E2C33FB99003E396B /* Assets.xcassets */; };
+		BDF50B822C33FB99003E396B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDF50B812C33FB99003E396B /* Base */; };
+		BDF50B8D2C33FB9A003E396B /* ziririt_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B8C2C33FB9A003E396B /* ziririt_iOSTests.swift */; };
+		BDF50B972C33FB9A003E396B /* ziririt_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B962C33FB9A003E396B /* ziririt_iOSUITests.swift */; };
+		BDF50B992C33FB9A003E396B /* ziririt_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B982C33FB9A003E396B /* ziririt_iOSUITestsLaunchTests.swift */; };
+		BDF50BA72C33FC17003E396B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BA62C33FC17003E396B /* SnapKit */; };
+		BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BA92C33FC3A003E396B /* RxCocoa */; };
+		BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BAB2C33FC3A003E396B /* RxSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDF50B892C33FB9A003E396B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF50B6A2C33FB98003E396B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF50B712C33FB98003E396B;
+			remoteInfo = "ziririt-iOS";
+		};
+		BDF50B932C33FB9A003E396B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF50B6A2C33FB98003E396B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF50B712C33FB98003E396B;
+			remoteInfo = "ziririt-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDF50B722C33FB98003E396B /* ziririt-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ziririt-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF50B752C33FB98003E396B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDF50B772C33FB98003E396B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDF50B792C33FB98003E396B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDF50B7E2C33FB99003E396B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF50B812C33FB99003E396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDF50B832C33FB99003E396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF50B882C33FB9A003E396B /* ziririt-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ziririt-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF50B8C2C33FB9A003E396B /* ziririt_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ziririt_iOSTests.swift; sourceTree = "<group>"; };
+		BDF50B922C33FB9A003E396B /* ziririt-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ziririt-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF50B962C33FB9A003E396B /* ziririt_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ziririt_iOSUITests.swift; sourceTree = "<group>"; };
+		BDF50B982C33FB9A003E396B /* ziririt_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ziririt_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF50B6F2C33FB98003E396B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */,
+				BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */,
+				BDF50BA72C33FC17003E396B /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF50B852C33FB9A003E396B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF50B8F2C33FB9A003E396B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDF50B692C33FB98003E396B = {
+			isa = PBXGroup;
+			children = (
+				BDF50B742C33FB98003E396B /* ziririt-iOS */,
+				BDF50B8B2C33FB9A003E396B /* ziririt-iOSTests */,
+				BDF50B952C33FB9A003E396B /* ziririt-iOSUITests */,
+				BDF50B732C33FB98003E396B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF50B732C33FB98003E396B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF50B722C33FB98003E396B /* ziririt-iOS.app */,
+				BDF50B882C33FB9A003E396B /* ziririt-iOSTests.xctest */,
+				BDF50B922C33FB9A003E396B /* ziririt-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDF50B742C33FB98003E396B /* ziririt-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDF50B752C33FB98003E396B /* AppDelegate.swift */,
+				BDF50B772C33FB98003E396B /* SceneDelegate.swift */,
+				BDF50B792C33FB98003E396B /* ViewController.swift */,
+				BDF50B7E2C33FB99003E396B /* Assets.xcassets */,
+				BDF50B802C33FB99003E396B /* LaunchScreen.storyboard */,
+				BDF50B832C33FB99003E396B /* Info.plist */,
+			);
+			path = "ziririt-iOS";
+			sourceTree = "<group>";
+		};
+		BDF50B8B2C33FB9A003E396B /* ziririt-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF50B8C2C33FB9A003E396B /* ziririt_iOSTests.swift */,
+			);
+			path = "ziririt-iOSTests";
+			sourceTree = "<group>";
+		};
+		BDF50B952C33FB9A003E396B /* ziririt-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF50B962C33FB9A003E396B /* ziririt_iOSUITests.swift */,
+				BDF50B982C33FB9A003E396B /* ziririt_iOSUITestsLaunchTests.swift */,
+			);
+			path = "ziririt-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF50B712C33FB98003E396B /* ziririt-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF50B9C2C33FB9A003E396B /* Build configuration list for PBXNativeTarget "ziririt-iOS" */;
+			buildPhases = (
+				BDF50B6E2C33FB98003E396B /* Sources */,
+				BDF50B6F2C33FB98003E396B /* Frameworks */,
+				BDF50B702C33FB98003E396B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ziririt-iOS";
+			packageProductDependencies = (
+				BDF50BA62C33FC17003E396B /* SnapKit */,
+				BDF50BA92C33FC3A003E396B /* RxCocoa */,
+				BDF50BAB2C33FC3A003E396B /* RxSwift */,
+			);
+			productName = "ziririt-iOS";
+			productReference = BDF50B722C33FB98003E396B /* ziririt-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDF50B872C33FB9A003E396B /* ziririt-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF50B9F2C33FB9A003E396B /* Build configuration list for PBXNativeTarget "ziririt-iOSTests" */;
+			buildPhases = (
+				BDF50B842C33FB9A003E396B /* Sources */,
+				BDF50B852C33FB9A003E396B /* Frameworks */,
+				BDF50B862C33FB9A003E396B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF50B8A2C33FB9A003E396B /* PBXTargetDependency */,
+			);
+			name = "ziririt-iOSTests";
+			productName = "ziririt-iOSTests";
+			productReference = BDF50B882C33FB9A003E396B /* ziririt-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDF50B912C33FB9A003E396B /* ziririt-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF50BA22C33FB9A003E396B /* Build configuration list for PBXNativeTarget "ziririt-iOSUITests" */;
+			buildPhases = (
+				BDF50B8E2C33FB9A003E396B /* Sources */,
+				BDF50B8F2C33FB9A003E396B /* Frameworks */,
+				BDF50B902C33FB9A003E396B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF50B942C33FB9A003E396B /* PBXTargetDependency */,
+			);
+			name = "ziririt-iOSUITests";
+			productName = "ziririt-iOSUITests";
+			productReference = BDF50B922C33FB9A003E396B /* ziririt-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF50B6A2C33FB98003E396B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BDF50B712C33FB98003E396B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BDF50B872C33FB9A003E396B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BDF50B712C33FB98003E396B;
+					};
+					BDF50B912C33FB9A003E396B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BDF50B712C33FB98003E396B;
+					};
+				};
+			};
+			buildConfigurationList = BDF50B6D2C33FB98003E396B /* Build configuration list for PBXProject "ziririt-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF50B692C33FB98003E396B;
+			packageReferences = (
+				BDF50BA52C33FC17003E396B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = BDF50B732C33FB98003E396B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF50B712C33FB98003E396B /* ziririt-iOS */,
+				BDF50B872C33FB9A003E396B /* ziririt-iOSTests */,
+				BDF50B912C33FB9A003E396B /* ziririt-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF50B702C33FB98003E396B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF50B7F2C33FB99003E396B /* Assets.xcassets in Resources */,
+				BDF50B822C33FB99003E396B /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF50B862C33FB9A003E396B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF50B902C33FB9A003E396B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF50B6E2C33FB98003E396B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
+				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
+				BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF50B842C33FB9A003E396B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF50B8D2C33FB9A003E396B /* ziririt_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF50B8E2C33FB9A003E396B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF50B992C33FB9A003E396B /* ziririt_iOSUITestsLaunchTests.swift in Sources */,
+				BDF50B972C33FB9A003E396B /* ziririt_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDF50B8A2C33FB9A003E396B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF50B712C33FB98003E396B /* ziririt-iOS */;
+			targetProxy = BDF50B892C33FB9A003E396B /* PBXContainerItemProxy */;
+		};
+		BDF50B942C33FB9A003E396B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF50B712C33FB98003E396B /* ziririt-iOS */;
+			targetProxy = BDF50B932C33FB9A003E396B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDF50B802C33FB99003E396B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF50B812C33FB99003E396B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDF50B9A2C33FB9A003E396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDF50B9B2C33FB9A003E396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF50B9D2C33FB9A003E396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ziririt-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jack.lee.ziririt-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDF50B9E2C33FB9A003E396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ziririt-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jack.lee.ziririt-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDF50BA02C33FB9A003E396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jack.lee.ziririt-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ziririt-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ziririt-iOS";
+			};
+			name = Debug;
+		};
+		BDF50BA12C33FB9A003E396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jack.lee.ziririt-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ziririt-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ziririt-iOS";
+			};
+			name = Release;
+		};
+		BDF50BA32C33FB9A003E396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jack.lee.ziririt-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ziririt-iOS";
+			};
+			name = Debug;
+		};
+		BDF50BA42C33FB9A003E396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jack.lee.ziririt-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ziririt-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF50B6D2C33FB98003E396B /* Build configuration list for PBXProject "ziririt-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF50B9A2C33FB9A003E396B /* Debug */,
+				BDF50B9B2C33FB9A003E396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF50B9C2C33FB9A003E396B /* Build configuration list for PBXNativeTarget "ziririt-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF50B9D2C33FB9A003E396B /* Debug */,
+				BDF50B9E2C33FB9A003E396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF50B9F2C33FB9A003E396B /* Build configuration list for PBXNativeTarget "ziririt-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF50BA02C33FB9A003E396B /* Debug */,
+				BDF50BA12C33FB9A003E396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF50BA22C33FB9A003E396B /* Build configuration list for PBXNativeTarget "ziririt-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF50BA32C33FB9A003E396B /* Debug */,
+				BDF50BA42C33FB9A003E396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDF50BA52C33FC17003E396B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDF50BA62C33FC17003E396B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDF50BA52C33FC17003E396B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		BDF50BA92C33FC3A003E396B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BDF50BAB2C33FC3A003E396B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BDF50B6A2C33FB98003E396B /* Project object */;
+}
