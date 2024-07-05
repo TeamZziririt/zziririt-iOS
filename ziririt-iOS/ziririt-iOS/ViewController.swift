@@ -12,6 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        print("테스팅")
+        print("검색화면을 수진님께서 구현")
     }
 }
