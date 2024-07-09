@@ -18,6 +18,7 @@
 		BDF50BA72C33FC17003E396B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BA62C33FC17003E396B /* SnapKit */; };
 		BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BA92C33FC3A003E396B /* RxCocoa */; };
 		BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BAB2C33FC3A003E396B /* RxSwift */; };
+		DB0C3D092C3D1FAB00E52FE1 /* NaverThirdPartyLogin in Frameworks */ = {isa = PBXBuildFile; productRef = DB0C3D082C3D1FAB00E52FE1 /* NaverThirdPartyLogin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0C3D092C3D1FAB00E52FE1 /* NaverThirdPartyLogin in Frameworks */,
 				BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */,
 				BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */,
 				BDF50BA72C33FC17003E396B /* SnapKit in Frameworks */,
@@ -150,6 +152,7 @@
 				BDF50BA62C33FC17003E396B /* SnapKit */,
 				BDF50BA92C33FC3A003E396B /* RxCocoa */,
 				BDF50BAB2C33FC3A003E396B /* RxSwift */,
+				DB0C3D082C3D1FAB00E52FE1 /* NaverThirdPartyLogin */,
 			);
 			productName = "ziririt-iOS";
 			productReference = BDF50B722C33FB98003E396B /* ziririt-iOS.app */;
@@ -226,6 +229,7 @@
 			packageReferences = (
 				BDF50BA52C33FC17003E396B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DB0C3D072C3D1FAB00E52FE1 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios" */,
 			);
 			productRefGroup = BDF50B732C33FB98003E396B /* Products */;
 			projectDirPath = "";
@@ -632,6 +636,14 @@
 				minimumVersion = 6.7.1;
 			};
 		};
+		DB0C3D072C3D1FAB00E52FE1 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/naver/naveridlogin-sdk-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -649,6 +661,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		DB0C3D082C3D1FAB00E52FE1 /* NaverThirdPartyLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB0C3D072C3D1FAB00E52FE1 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios" */;
+			productName = NaverThirdPartyLogin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
