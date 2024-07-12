@@ -19,6 +19,7 @@
 		BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BA92C33FC3A003E396B /* RxCocoa */; };
 		BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BAB2C33FC3A003E396B /* RxSwift */; };
 		DB0C3D092C3D1FAB00E52FE1 /* NaverThirdPartyLogin in Frameworks */ = {isa = PBXBuildFile; productRef = DB0C3D082C3D1FAB00E52FE1 /* NaverThirdPartyLogin */; };
+		DBEE902D2C3FCFA40028E55F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBEE902C2C3FCFA40028E55F /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEE902D2C3FCFA40028E55F /* Alamofire in Frameworks */,
 				DB0C3D092C3D1FAB00E52FE1 /* NaverThirdPartyLogin in Frameworks */,
 				BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */,
 				BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */,
@@ -153,6 +155,7 @@
 				BDF50BA92C33FC3A003E396B /* RxCocoa */,
 				BDF50BAB2C33FC3A003E396B /* RxSwift */,
 				DB0C3D082C3D1FAB00E52FE1 /* NaverThirdPartyLogin */,
+				DBEE902C2C3FCFA40028E55F /* Alamofire */,
 			);
 			productName = "ziririt-iOS";
 			productReference = BDF50B722C33FB98003E396B /* ziririt-iOS.app */;
@@ -230,6 +233,7 @@
 				BDF50BA52C33FC17003E396B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				BDF50BA82C33FC3A003E396B /* XCRemoteSwiftPackageReference "RxSwift" */,
 				DB0C3D072C3D1FAB00E52FE1 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios" */,
+				DBEE902B2C3FCFA40028E55F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = BDF50B732C33FB98003E396B /* Products */;
 			projectDirPath = "";
@@ -644,6 +648,14 @@
 				kind = branch;
 			};
 		};
+		DBEE902B2C3FCFA40028E55F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -666,6 +678,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB0C3D072C3D1FAB00E52FE1 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios" */;
 			productName = NaverThirdPartyLogin;
+		};
+		DBEE902C2C3FCFA40028E55F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBEE902B2C3FCFA40028E55F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
