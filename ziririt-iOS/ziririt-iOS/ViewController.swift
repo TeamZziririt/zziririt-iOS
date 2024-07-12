@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginInstance?.delegate = self
-        view.backgroundColor = .black
+        view.backgroundColor = .red
         setup()
         addButtonFunc()
         print("검색화면을 수진님께서 구현")
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         let imageView = UIImageView()
         let image = UIImage(named: "logo_zziririt_big")
         imageView.image = image
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -84,13 +85,12 @@ class ViewController: UIViewController {
         view.addSubview(buttonStackView)
         
         logoImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(203)
+            make.bottom.equalTo(loginLabel.snp.top).offset(-16)
             make.centerX.equalToSuperview()
         }
         
         loginLabel.snp.makeConstraints { make in
-            make.top.equalTo(logoImageView.snp.bottom).offset(16)
-            make.centerX.equalToSuperview()
+            make.center.equalToSuperview()
         }
         
         loginButton.snp.makeConstraints { make in
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
         }
         
         buttonStackView.snp.makeConstraints { make in
-            make.top.equalTo(loginLabel.snp.bottom).offset(32)
+            make.top.equalTo(loginLabel.snp.bottom).offset(64)
             make.centerX.equalToSuperview()
         }
     }
@@ -155,10 +155,6 @@ class ViewController: UIViewController {
 //            print("프로필 이미지 url : \(profile_image)")
 //            print("출생연도 : \(birthyear)")
 //            print("휴대전화 번호 : \(mobile)")
-                        
-            //self.nameLabel.text = "\(name)"
-            //self.emailLabel.text = "\(email)"
-            //self.idLabel.text = "\(id)"
         }
     }
 }
