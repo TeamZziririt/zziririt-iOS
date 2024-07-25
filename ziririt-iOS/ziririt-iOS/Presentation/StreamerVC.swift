@@ -28,8 +28,10 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
     private lazy var contentStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
+        stack.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        stack.isLayoutMarginsRelativeArrangement = true
         stack.addArrangedSubview(boardHeader)
-        stack.addArrangedSubview(boardRank)
+        stack.addArrangedSubview(noticeBoard)
         return stack
     }()
     
@@ -41,10 +43,13 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         return button
     }()
     
-    private let boardRank: UITableView = {
+    private let noticeBoard: UITableView = {
         let tableView = UITableView()
-        tableView.register(BoardTableViewHeader.self,
-                           forHeaderFooterViewReuseIdentifier: BoardTableViewHeader.identifier)
+//        tableView.backgroundColor = .darkGray
+        tableView.layer.cornerRadius = 10
+        tableView.clipsToBounds = true
+        tableView.register(NoticeBoardTableViewCell.self,
+                           forCellReuseIdentifier: NoticeBoardTableViewCell.identifier)
         return tableView
     }()
     
@@ -85,15 +90,13 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
     
     private func setup() {
         navigationController?.navigationBar.isHidden = true
-        
         view.backgroundColor = .black
-        boardRank.backgroundColor = .clear
         view.addSubview(scrollView)
         scrollView.addSubview(containerView)
         containerView.addSubview(contentStack)
         
-        boardRank.delegate = self
-        boardRank.dataSource = self
+        noticeBoard.delegate = self
+        noticeBoard.dataSource = self
     }
     
     private func setupConstraints() {
@@ -108,29 +111,26 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         
         contentStack.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.leading.trailing.equalToSuperview().inset(16)
+            make.leading.trailing.equalToSuperview()
         }
          
-        boardRank.snp.makeConstraints { make in
-            make.bottom.equalTo(containerView.snp.bottom)
+        noticeBoard.snp.makeConstraints { make in
+            make.height.equalTo(97)
         }
     }
 }
 
 extension StreamerVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .red
+        let cell = tableView.dequeueReusableCell(withIdentifier: NoticeBoardTableViewCell.identifier, for: indexPath) as! NoticeBoardTableViewCell
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: BoardTableViewHeader.identifier) as? BoardTableViewHeader
-        header?.setTitle(title: "스트리머 게시판 랭킹")
-        return header
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self.noticeBoard.frame.height/3
     }
 }

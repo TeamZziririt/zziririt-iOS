@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */; };
-		BDCD49422C51CB0500CC05A3 /* BoardRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49412C51CB0500CC05A3 /* BoardRankTableViewCell.swift */; };
+		BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */; };
 		BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */; };
 		BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B752C33FB98003E396B /* AppDelegate.swift */; };
 		BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B772C33FB98003E396B /* SceneDelegate.swift */; };
@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerVC.swift; sourceTree = "<group>"; };
-		BDCD49412C51CB0500CC05A3 /* BoardRankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardRankTableViewCell.swift; sourceTree = "<group>"; };
+		BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardTableViewCell.swift; sourceTree = "<group>"; };
 		BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewHeader.swift; sourceTree = "<group>"; };
 		BDF50B722C33FB98003E396B /* ziririt-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ziririt-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF50B752C33FB98003E396B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */,
-				BDCD49412C51CB0500CC05A3 /* BoardRankTableViewCell.swift */,
+				BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */,
 				BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */,
 			);
 			path = Presentation;
@@ -296,7 +296,7 @@
 			files = (
 				BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */,
 				BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */,
-				BDCD49422C51CB0500CC05A3 /* BoardRankTableViewCell.swift in Sources */,
+				BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */,
 				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
 				BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */,

@@ -12,11 +12,13 @@ final class BoardTableViewHeader: UITableViewHeaderFooterView {
     
     // MARK: - Components
     
-    private let title: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        return label
+    private let segmentButton: UISegmentedControl = {
+        let segment = UISegmentedControl()
+        segment.backgroundColor = .clear
+        segment.insertSegment(withTitle: "최신 순", at: 0, animated: true)
+        segment.insertSegment(withTitle: "인기 순", at: 1, animated: true)
+        segment.selectedSegmentIndex = 0
+        return segment
     }()
 
     // MARK: - Properties
@@ -27,6 +29,7 @@ final class BoardTableViewHeader: UITableViewHeaderFooterView {
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
+        setUp()
         setUpConstaints()
     }
     
@@ -36,16 +39,25 @@ final class BoardTableViewHeader: UITableViewHeaderFooterView {
     
     // MARK: - Methods
     
-    func setTitle(title: String) {
-        self.title.text = title
-        self.title.font = UIFont.systemFont(ofSize: 32, weight: .bold)
-        self.title.textColor = .white
+    func setUp() {
+        segmentButton.setTitleTextAttributes([
+            NSAttributedString.Key.foregroundColor: UIColor.lightGray,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .bold)
+        ], for: .normal)
+        
+        segmentButton.setTitleTextAttributes([
+            NSAttributedString.Key.foregroundColor: UIColor.green,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .bold)
+        ], for: .selected)
+        
+        segmentButton.selectedSegmentTintColor = .clear
+        segmentButton.backgroundColor = .clear
     }
     
     private func setUpConstaints() {
-        contentView.addSubview(title)
-        title.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+        contentView.addSubview(segmentButton)
+        segmentButton.snp.makeConstraints { make in
+            make.width.equalTo(110)
         }
     }
 }
