@@ -28,10 +28,12 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
     private lazy var contentStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
+        stack.spacing = 8
         stack.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         stack.isLayoutMarginsRelativeArrangement = true
         stack.addArrangedSubview(boardHeader)
         stack.addArrangedSubview(noticeBoard)
+        stack.addArrangedSubview(communityBoard)
         return stack
     }()
     
@@ -45,9 +47,20 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
     
     private let noticeBoard: UITableView = {
         let tableView = UITableView()
-//        tableView.backgroundColor = .darkGray
         tableView.layer.cornerRadius = 10
         tableView.clipsToBounds = true
+        tableView.register(NoticeBoardTableViewCell.self,
+                           forCellReuseIdentifier: NoticeBoardTableViewCell.identifier)
+        return tableView
+    }()
+    
+    private let communityBoard: UITableView = {
+        let tableView = UITableView()
+        tableView.separatorColor = .white
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        tableView.layer.cornerRadius = 10
+        tableView.clipsToBounds = true
+        tableView.backgroundColor = .darkGray
         tableView.register(NoticeBoardTableViewCell.self,
                            forCellReuseIdentifier: NoticeBoardTableViewCell.identifier)
         return tableView
@@ -59,8 +72,8 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
     
     // MARK: - Initializer
     
-    init(board: String) {
-        boardHeader.titleLabel?.text = board
+    init(boardTitle: String) {
+        boardHeader.setTitle(boardTitle, for: .normal)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -86,6 +99,20 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
                 print("버튼이 눌렸습니다.")
             }
             .disposed(by: disposeBag)
+        
+        noticeBoard.rx.itemSelected
+            .withUnretained(self)
+            .subscribe { (owner, indexPath) in
+                print("공지사항 \(indexPath.row)번째가 눌렸습니다.")
+            }
+            .disposed(by: disposeBag)
+        
+        communityBoard.rx.itemSelected
+            .withUnretained(self)
+            .subscribe { (owner, indexPath) in
+                print("게시판 \(indexPath.row)번째가 눌렸습니다.")
+            }
+            .disposed(by: disposeBag)
     }
     
     private func setup() {
@@ -97,6 +124,9 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         
         noticeBoard.delegate = self
         noticeBoard.dataSource = self
+        
+        communityBoard.delegate = self
+        communityBoard.dataSource = self
     }
     
     private func setupConstraints() {
@@ -117,12 +147,20 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         noticeBoard.snp.makeConstraints { make in
             make.height.equalTo(97)
         }
+        
+        communityBoard.snp.makeConstraints { make in
+            make.bottom.equalTo(containerView.snp.bottom)
+        }
     }
 }
 
 extension StreamerVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return tableView == noticeBoard ? 3 : 10
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -131,6 +169,6 @@ extension StreamerVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.noticeBoard.frame.height/3
+        return tableView == noticeBoard ? self.noticeBoard.frame.height/3 : CGFloat(50)
     }
 }
