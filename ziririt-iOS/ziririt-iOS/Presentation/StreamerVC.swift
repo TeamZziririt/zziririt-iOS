@@ -20,6 +20,8 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         return scroll
     }()
     
+    private let segmentButton: CustomSegmentComponent
+    
     private let containerView: UIView = {
         let view = UIView()
         return view
@@ -31,7 +33,6 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         stack.spacing = 8
         stack.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         stack.isLayoutMarginsRelativeArrangement = true
-        stack.addArrangedSubview(boardHeader)
         stack.addArrangedSubview(noticeBoard)
         stack.addArrangedSubview(communityBoard)
         return stack
@@ -69,10 +70,12 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
     // MARK: - Properties
     
     private let disposeBag = DisposeBag()
+    private let segments: [String] = ["최신 글", "인기 글"]
     
     // MARK: - Initializer
     
     init(boardTitle: String) {
+        self.segmentButton = CustomSegmentComponent(segments: segments)
         boardHeader.setTitle(boardTitle, for: .normal)
         super.init(nibName: nil, bundle: nil)
     }
@@ -120,6 +123,8 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         view.backgroundColor = .black
         view.addSubview(scrollView)
         scrollView.addSubview(containerView)
+        containerView.addSubview(boardHeader)
+        containerView.addSubview(segmentButton)
         containerView.addSubview(contentStack)
         
         noticeBoard.delegate = self
@@ -139,8 +144,20 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
             make.size.equalTo(scrollView.snp.size)
         }
         
-        contentStack.snp.makeConstraints { make in
+        boardHeader.snp.makeConstraints { make in
             make.top.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.height.equalTo(27)
+        }
+        
+        segmentButton.snp.makeConstraints { make in
+            make.width.equalTo(145)
+            make.leading.equalToSuperview().inset(15)
+            make.top.equalTo(boardHeader.snp.bottom).offset(11)
+        }
+        
+        contentStack.snp.makeConstraints { make in
+            make.top.equalTo(segmentButton.snp.bottom).offset(6)
             make.leading.trailing.equalToSuperview()
         }
          
