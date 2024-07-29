@@ -13,17 +13,10 @@ class LivePostRankingTableViewCell: UITableViewCell {
     
     //MARK: - Components
     
-    private lazy var postTitleLabel: UILabel = {
+    private lazy var postRankingLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13, weight: .bold)
-        label.textColor = .gray
-        return label
-    }()
-    
-    private lazy var userNameLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13, weight: .bold)
-        label.textColor = .gray
+        label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        label.textColor = .white
         return label
     }()
     
@@ -33,10 +26,56 @@ class LivePostRankingTableViewCell: UITableViewCell {
         return imageView
     }()
     
+    private lazy var streamerNameLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        label.textColor = .white
+        return label
+    }()
+    
+    private lazy var postTitleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        label.textColor = .white
+        return label
+    }()
+    
+    private lazy var userNameLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        label.textColor = .white
+        return label
+    }()
+    
+    private lazy var postRankingAndImageStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [postRankingLabel, postImageView])
+        stackView.axis = .horizontal
+        stackView.spacing = 5
+        stackView.alignment = .center
+        return stackView
+    }()
+    
+    private lazy var postTitleStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [streamerNameLabel, postTitleLabel])
+        stackView.axis = .horizontal
+        stackView.spacing = 5
+        stackView.alignment = .leading
+        return stackView
+    }()
+    
+    private lazy var postTitleAndUserNameStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [postTitleStackView, userNameLabel])
+        stackView.axis = .vertical
+        stackView.spacing = 5
+        stackView.alignment = .leading
+        return stackView
+    }()
+    
     //MARK: - Initializer
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setView()
         setupUI()
     }
     
@@ -45,8 +84,36 @@ class LivePostRankingTableViewCell: UITableViewCell {
     }
     
     //MARK: - Methods
-    private func setupUI() {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0))
+    }
+    
+    private func setView() {
+        contentView.backgroundColor = .darkGray
         contentView.layer.cornerRadius = 15
     }
-
+    
+    private func setupUI() {
+        contentView.addSubview(postRankingAndImageStackView)
+        contentView.addSubview(postTitleAndUserNameStackView)
+        
+        postRankingAndImageStackView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalToSuperview().offset(16)
+        }
+        
+        postTitleAndUserNameStackView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalTo(postRankingAndImageStackView.snp.trailing).offset(13)
+        }
+    }
+    
+    func configure(streamerName: String, postTitle: String, userName: String) {
+        postRankingLabel.text = "1"
+        streamerNameLabel.text = streamerName
+        postTitleLabel.text = postTitle
+        userNameLabel.text = userName
+    }
 }

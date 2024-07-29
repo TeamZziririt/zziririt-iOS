@@ -30,7 +30,7 @@ class MainPageVC: UIViewController {
         let button = UIButton()
         button.setTitle("최근 방문한 게시판", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
-        button.backgroundColor = .gray
+        button.backgroundColor = .clear
         button.titleLabel?.textAlignment = .left
         button.contentHorizontalAlignment = .leading
         return button
@@ -41,7 +41,8 @@ class MainPageVC: UIViewController {
         tableView.register(RecentVisitBoardTableViewCell.self, forCellReuseIdentifier: RecentVisitBoardTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .yellow
+        tableView.backgroundColor = .clear
+        tableView.showsVerticalScrollIndicator = false
         return tableView
     }()
     
@@ -49,7 +50,7 @@ class MainPageVC: UIViewController {
         let button = UIButton()
         button.setTitle("실시간 게시글 랭킹", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
-        button.backgroundColor = .gray
+        button.backgroundColor = .clear
         button.titleLabel?.textAlignment = .left
         button.contentHorizontalAlignment = .leading
         return button
@@ -57,9 +58,11 @@ class MainPageVC: UIViewController {
     
     private lazy var livePostRankingTableView : UITableView = {
         let tableView = UITableView()
+        tableView.register(LivePostRankingTableViewCell.self, forCellReuseIdentifier: LivePostRankingTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .yellow
+        tableView.backgroundColor = .clear
+        tableView.showsVerticalScrollIndicator = false
         return tableView
     }()
         
@@ -70,8 +73,8 @@ class MainPageVC: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
-        scrollView.backgroundColor = .red
+        view.backgroundColor = .clear
+        scrollView.backgroundColor = .clear
         scrollView.delegate = self
         view.addSubview(scrollView)
         scrollView.addSubview(recentVisitBoardButton)
@@ -91,24 +94,24 @@ class MainPageVC: UIViewController {
         }
         
         recentVisitBoardTableView.snp.makeConstraints { make in
-            make.top.equalTo(recentVisitBoardButton.snp.bottom).offset(8)
+            make.top.equalTo(recentVisitBoardButton.snp.bottom).offset(4)
             make.width.equalToSuperview().inset(16)
-            make.height.equalTo(224)
+            make.height.equalTo(220)
             make.centerX.equalToSuperview()
         }
         
         livePostRankingButton.snp.makeConstraints { make in
-            make.top.equalTo(recentVisitBoardTableView.snp.bottom).offset(8)
+            make.top.equalTo(recentVisitBoardTableView.snp.bottom).offset(4)
             make.width.equalToSuperview().inset(16)
             make.height.equalTo(35)
             make.centerX.equalToSuperview()
         }
         
         livePostRankingTableView.snp.makeConstraints { make in
-            make.top.equalTo(livePostRankingButton.snp.bottom).offset(8)
+            make.top.equalTo(livePostRankingButton.snp.bottom).offset(4)
             make.width.equalToSuperview().inset(16)
             make.bottom.equalTo(scrollView.snp.bottom)
-            make.height.equalTo(224)
+            make.height.equalTo(366)
             make.centerX.equalToSuperview()
         }
     }
@@ -117,9 +120,9 @@ class MainPageVC: UIViewController {
 extension MainPageVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == recentVisitBoardTableView {
-            return 1
+            return 5
         } else {
-            return 3
+            return 5
         }
     }
     
@@ -131,9 +134,19 @@ extension MainPageVC : UITableViewDelegate, UITableViewDataSource {
             cell.configure(streamerName: "박앙우", subscriberCount: "0명")
             return cell
         } else {
-            let cell = UITableViewCell()
-            cell.backgroundColor = .blue
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: LivePostRankingTableViewCell.identifier, for: indexPath) as? LivePostRankingTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.backgroundColor = .clear
+            cell.configure(streamerName: "잭뤼 ·", postTitle: "인기글이구먼유", userName: "동준뤼")
             return cell
+        }
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView == recentVisitBoardTableView {
+            return 44
+        } else {
+            return 74
         }
     }
 }

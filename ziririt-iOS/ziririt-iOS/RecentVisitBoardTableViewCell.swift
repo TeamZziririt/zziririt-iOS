@@ -62,6 +62,7 @@ class RecentVisitBoardTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setView()
         setupUI()
     }
     
@@ -70,6 +71,10 @@ class RecentVisitBoardTableViewCell: UITableViewCell {
     }
     
     //MARK: - Methods
+    
+    private func setView() {
+        contentView.backgroundColor = .black
+    }
     
     private func setupUI() {
         contentView.addSubview(infoStackView)
