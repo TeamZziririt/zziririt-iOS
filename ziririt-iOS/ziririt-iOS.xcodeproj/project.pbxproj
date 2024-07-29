@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */; };
-		BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */; };
-		BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */; };
-		BDCD49462C521CC000CC05A3 /* CustomSegmentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */; };
 		BDB7233C2C41219600007A74 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723332C41219600007A74 /* Pretendard-ExtraBold.otf */; };
 		BDB7233D2C41219600007A74 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723342C41219600007A74 /* Pretendard-Black.otf */; };
 		BDB7233E2C41219600007A74 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723352C41219600007A74 /* Pretendard-Regular.otf */; };
@@ -24,6 +20,10 @@
 		BDB723492C41224D00007A74 /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723462C41224C00007A74 /* GmarketSansTTFBold.ttf */; };
 		BDB7234A2C41224D00007A74 /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723472C41224D00007A74 /* GmarketSansTTFMedium.ttf */; };
 		BDB7234E2C41233400007A74 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7234D2C41233400007A74 /* Font.swift */; };
+		BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */; };
+		BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */; };
+		BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */; };
+		BDCD49462C521CC000CC05A3 /* CustomSegmentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */; };
 		BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B752C33FB98003E396B /* AppDelegate.swift */; };
 		BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B772C33FB98003E396B /* SceneDelegate.swift */; };
 		BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B792C33FB98003E396B /* ViewController.swift */; };
@@ -39,6 +39,9 @@
 		DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B362C52910000907D9C /* MainPageVC.swift */; };
 		DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */; };
 		DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */; };
+		DBDE6B3F2C57ED3800907D9C /* StreamerSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3E2C57ED3800907D9C /* StreamerSearchVC.swift */; };
+		DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */; };
+		DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */; };
 		DBEE902D2C3FCFA40028E55F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBEE902C2C3FCFA40028E55F /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -60,10 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerVC.swift; sourceTree = "<group>"; };
-		BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardTableViewCell.swift; sourceTree = "<group>"; };
-		BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewHeader.swift; sourceTree = "<group>"; };
-		BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentComponent.swift; sourceTree = "<group>"; };
 		BDB723332C41219600007A74 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		BDB723342C41219600007A74 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		BDB723352C41219600007A74 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
@@ -77,6 +76,10 @@
 		BDB723462C41224C00007A74 /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
 		BDB723472C41224D00007A74 /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
 		BDB7234D2C41233400007A74 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerVC.swift; sourceTree = "<group>"; };
+		BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardTableViewCell.swift; sourceTree = "<group>"; };
+		BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewHeader.swift; sourceTree = "<group>"; };
+		BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentComponent.swift; sourceTree = "<group>"; };
 		BDF50B722C33FB98003E396B /* ziririt-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ziririt-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF50B752C33FB98003E396B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF50B772C33FB98003E396B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +95,9 @@
 		DBDE6B362C52910000907D9C /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVisitBoardTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePostRankingTableViewCell.swift; sourceTree = "<group>"; };
+		DBDE6B3E2C57ED3800907D9C /* StreamerSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerSearchVC.swift; sourceTree = "<group>"; };
+		DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerSearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingSquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,17 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BDCD493E2C51C76D00CC05A3 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */,
-				BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */,
-				BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */,
-				BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */,
-			);
-			path = Presentation;
-            sourceTree = "<group>";
-        };
 		BDB723322C41217700007A74 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +165,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		BDCD493E2C51C76D00CC05A3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DBDE6B3E2C57ED3800907D9C /* StreamerSearchVC.swift */,
+				DBDE6B362C52910000907D9C /* MainPageVC.swift */,
+				BDCD493F2C51C77600CC05A3 /* StreamerVC.swift */,
+				BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */,
+				BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */,
+				DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */,
+				DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */,
+				BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */,
+				DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */,
+				DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		BDF50B692C33FB98003E396B = {
 			isa = PBXGroup;
 			children = (
@@ -201,9 +213,6 @@
 				BDF50B7E2C33FB99003E396B /* Assets.xcassets */,
 				BDF50B802C33FB99003E396B /* LaunchScreen.storyboard */,
 				BDF50B832C33FB99003E396B /* Info.plist */,
-				DBDE6B362C52910000907D9C /* MainPageVC.swift */,
-				DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */,
-				DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */,
 				BDB723322C41217700007A74 /* font */,
 			);
 			path = "ziririt-iOS";
@@ -384,12 +393,15 @@
 				BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */,
 				BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */,
 				BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */,
+				DBDE6B3F2C57ED3800907D9C /* StreamerSearchVC.swift in Sources */,
 				BDB7234E2C41233400007A74 /* Font.swift in Sources */,
 				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
+				DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */,
 				DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */,
 				DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */,
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
+				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
 				BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */,
 				BDCD49462C521CC000CC05A3 /* CustomSegmentComponent.swift in Sources */,
 			);
