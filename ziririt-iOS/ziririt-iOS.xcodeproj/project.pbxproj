@@ -39,6 +39,9 @@
 		DB104A8A2C59E722006FF958 /* MyPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A892C59E722006FF958 /* MyPostsVC.swift */; };
 		DB104A8C2C59E79D006FF958 /* MyPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A8B2C59E79D006FF958 /* MyPostsTableViewCell.swift */; };
 		DB104A8F2C5A04B1006FF958 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A8E2C5A04B1006FF958 /* Color.swift */; };
+		DB104A912C5AA7EC006FF958 /* CommonPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A902C5AA7EC006FF958 /* CommonPostsVC.swift */; };
+		DB104A932C5AA824006FF958 /* CommonPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A922C5AA824006FF958 /* CommonPostsTableViewCell.swift */; };
+		DB104A952C5AA9F4006FF958 /* NoticeBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */; };
 		DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B362C52910000907D9C /* MainPageVC.swift */; };
 		DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */; };
 		DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */; };
@@ -99,6 +102,9 @@
 		DB104A892C59E722006FF958 /* MyPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsVC.swift; sourceTree = "<group>"; };
 		DB104A8B2C59E79D006FF958 /* MyPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsTableViewCell.swift; sourceTree = "<group>"; };
 		DB104A8E2C5A04B1006FF958 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DB104A902C5AA7EC006FF958 /* CommonPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPostsVC.swift; sourceTree = "<group>"; };
+		DB104A922C5AA824006FF958 /* CommonPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPostsTableViewCell.swift; sourceTree = "<group>"; };
+		DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardVC.swift; sourceTree = "<group>"; };
 		DBDE6B362C52910000907D9C /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVisitBoardTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePostRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -190,6 +196,9 @@
 				DBDE6B442C581B2400907D9C /* MyPageVC.swift */,
 				DB104A892C59E722006FF958 /* MyPostsVC.swift */,
 				DB104A8B2C59E79D006FF958 /* MyPostsTableViewCell.swift */,
+				DB104A902C5AA7EC006FF958 /* CommonPostsVC.swift */,
+				DB104A922C5AA824006FF958 /* CommonPostsTableViewCell.swift */,
+				DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -404,16 +413,19 @@
 			files = (
 				BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */,
 				BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */,
+				DB104A932C5AA824006FF958 /* CommonPostsTableViewCell.swift in Sources */,
 				DB104A8A2C59E722006FF958 /* MyPostsVC.swift in Sources */,
 				BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */,
 				DBDE6B3F2C57ED3800907D9C /* StreamerSearchVC.swift in Sources */,
 				BDB7234E2C41233400007A74 /* Font.swift in Sources */,
 				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
 				DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */,
+				DB104A952C5AA9F4006FF958 /* NoticeBoardVC.swift in Sources */,
 				DBDE6B452C581B2400907D9C /* MyPageVC.swift in Sources */,
 				DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */,
 				DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */,
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
+				DB104A912C5AA7EC006FF958 /* CommonPostsVC.swift in Sources */,
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
 				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
 				DB104A8C2C59E79D006FF958 /* MyPostsTableViewCell.swift in Sources */,
