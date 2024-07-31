@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CommonPostsVC: UIViewController {
+class CommonMypageBoardVC: UIViewController {
     
     // MARK: - Components
     
@@ -29,7 +29,7 @@ class CommonPostsVC: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(CommonPostsTableViewCell.self, forCellReuseIdentifier: CommonPostsTableViewCell.identifier)
+        tableView.register(CommonMypageBoardTableViewCell.self, forCellReuseIdentifier: CommonMypageBoardTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .clear
@@ -89,13 +89,13 @@ class CommonPostsVC: UIViewController {
         }
 }
 
-extension CommonPostsVC: UITableViewDelegate, UITableViewDataSource {
+extension CommonMypageBoardVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CommonPostsTableViewCell.identifier, for: indexPath) as? CommonPostsTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CommonMypageBoardTableViewCell.identifier, for: indexPath) as? CommonMypageBoardTableViewCell else {
             return UITableViewCell()
         }
         cell.configure(title: "글 제목", userName: "유저 닉네임", createdAt: "글 작성 시간", commentCount: "댓글 개수", thumbnailImage: UIImage(named: "thumbnail_placeholder")!)

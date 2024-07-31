@@ -1,5 +1,5 @@
 //
-//  MyLikedPostsVC.swift
+//  MyCommentsVC.swift
 //  ziririt-iOS
 //
 //  Created by 박상우 on 8/1/24.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class MyLikedPostsVC: UIViewController {
+class CommentHistoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let commonPostVC = CommonPostsVC(title: "내가 찌리릿한 게시글")
+        let commonPostVC = CommonMypageBoardVC(title: "내가 작성한 댓글")
         addChild(commonPostVC)
         view.addSubview(commonPostVC.view)
         commonPostVC.view.frame = view.bounds

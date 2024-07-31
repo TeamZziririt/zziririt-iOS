@@ -12,7 +12,7 @@ class NoticeBoardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let commonPostVC = CommonPostsVC(title: "공지사항")
+        let commonPostVC = CommonMypageBoardVC(title: "공지사항")
         addChild(commonPostVC)
         view.addSubview(commonPostVC.view)
         commonPostVC.view.frame = view.bounds

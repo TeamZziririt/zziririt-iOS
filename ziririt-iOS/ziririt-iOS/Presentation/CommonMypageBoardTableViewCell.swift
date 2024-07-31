@@ -8,8 +8,8 @@
 import UIKit
 import SnapKit
 
-class CommonPostsTableViewCell: UITableViewCell {
-    static let identifier = "CommonPostsTableViewCell"
+class CommonMypageBoardTableViewCell: UITableViewCell {
+    static let identifier = "CommonMypageBoardTableViewCell"
     
     private lazy var thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -99,13 +99,17 @@ class CommonPostsTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(title: String, userName: String, createdAt: String, commentCount: String, thumbnailImage: UIImage) {
+    func configure(title: String, userName: String, createdAt: String, commentCount: String, thumbnailImage: UIImage?) {
         titleLabel.text = title
         userNameLabel.text = userName
         createdAtLabel.text = createdAt
         commentCountLabel.text = commentCount
-        thumbnailImageView.image = thumbnailImage
+        
+        if let image = thumbnailImage {
+            thumbnailImageView.image = image
+            thumbnailImageView.isHidden = false
+        } else {
+            thumbnailImageView.isHidden = true
+        }
     }
 }
-
-

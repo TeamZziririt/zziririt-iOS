@@ -8,9 +8,9 @@
 import UIKit
 import SnapKit
 
-class MyPostsTableViewCell: UITableViewCell {
+class PostHistoryTableViewCell: UITableViewCell {
     
-    static let identifier = "MyPostsTableViewCell"
+    static let identifier = "PostHistoryTableViewCell"
     
     // MARK: - Components
     

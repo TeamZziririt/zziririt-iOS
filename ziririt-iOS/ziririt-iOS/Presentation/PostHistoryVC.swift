@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MyPostsVC: UIViewController {
+class PostHistoryVC: UIViewController {
     
     // MARK: - Components
     
@@ -31,7 +31,7 @@ class MyPostsVC: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(MyPostsTableViewCell.self, forCellReuseIdentifier: MyPostsTableViewCell.identifier)
+        tableView.register(PostHistoryTableViewCell.self, forCellReuseIdentifier: PostHistoryTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .clear
@@ -87,13 +87,13 @@ class MyPostsVC: UIViewController {
     }
 }
 
-extension MyPostsVC: UITableViewDelegate, UITableViewDataSource {
+extension PostHistoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MyPostsTableViewCell.identifier, for: indexPath) as? MyPostsTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PostHistoryTableViewCell.identifier, for: indexPath) as? PostHistoryTableViewCell else {
             return UITableViewCell()
         }
         cell.configure(title: "글 제목", UserName: "유저 닉네임", createdAt: "작성시간", commentCount: "(댓글 개수)", thumbnailImage: UIImage(named: "thumbnail_placeholder"))
