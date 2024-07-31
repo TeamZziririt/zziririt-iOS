@@ -15,7 +15,7 @@ class LivePostRankingTableViewCell: UITableViewCell {
     
     private lazy var postRankingLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.textColor = .white
         return label
     }()
@@ -50,7 +50,7 @@ class LivePostRankingTableViewCell: UITableViewCell {
     private lazy var postRankingAndImageStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [postRankingLabel, postImageView])
         stackView.axis = .horizontal
-        stackView.spacing = 5
+        stackView.spacing = 8
         stackView.alignment = .center
         return stackView
     }()
@@ -99,6 +99,10 @@ class LivePostRankingTableViewCell: UITableViewCell {
         contentView.addSubview(postRankingAndImageStackView)
         contentView.addSubview(postTitleAndUserNameStackView)
         
+        postImageView.snp.makeConstraints { make in
+            make.size.equalTo(43)
+        }
+        
         postRankingAndImageStackView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.leading.equalToSuperview().offset(16)
@@ -110,8 +114,8 @@ class LivePostRankingTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(streamerName: String, postTitle: String, userName: String) {
-        postRankingLabel.text = "1"
+    func configure(rankingNumber: Int, streamerName: String, postTitle: String, userName: String) {
+        postRankingLabel.text = "\(rankingNumber)"
         streamerNameLabel.text = streamerName
         postTitleLabel.text = postTitle
         userNameLabel.text = userName

@@ -9,17 +9,6 @@ import UIKit
 import SnapKit
 import RxSwift
 
-// 전체 뷰 - 스크롤 뷰
-
-// 최근 방문한 게시판 - 테이블 뷰
-// 최근 방문한 내역이 없을 시 별도의 안내(뷰) 표시
-// 테이블 뷰 셀 데이터 - 스트리머 이름, 구독자 수, 팔로우 유무
-
-// 스트리머 게시글 랭킹 - 테이블 뷰
-// 테이블 뷰 셀 데이터 - 스트리머 이미지, 게시글 제목, 작성자 닉네임
-// 순위는 좋아요 순서로...
-
-
 class MainPageVC: UIViewController {
 
     //MARK: - Component
@@ -29,7 +18,7 @@ class MainPageVC: UIViewController {
     private lazy var recentVisitBoardButton : UIButton = {
         let button = UIButton()
         button.setTitle("최근 방문한 게시판", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        button.titleLabel?.font = UIFont(name: "GmarketSansTTFBold", size: 16)
         button.backgroundColor = .clear
         button.titleLabel?.textAlignment = .left
         button.contentHorizontalAlignment = .leading
@@ -49,7 +38,7 @@ class MainPageVC: UIViewController {
     private lazy var livePostRankingButton : UIButton = {
         let button = UIButton()
         button.setTitle("실시간 게시글 랭킹", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        button.titleLabel?.font = UIFont(name: "GmarketSansTTFBold", size: 16)
         button.backgroundColor = .clear
         button.titleLabel?.textAlignment = .left
         button.contentHorizontalAlignment = .leading
@@ -63,19 +52,24 @@ class MainPageVC: UIViewController {
         tableView.dataSource = self
         tableView.backgroundColor = .clear
         tableView.showsVerticalScrollIndicator = false
+        tableView.isScrollEnabled = false
         return tableView
     }()
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        setView()
         setupUI()
         navigationController?.navigationBar.isHidden = true
     }
     
-    private func setupUI() {
+    private func setView() {
         view.backgroundColor = .clear
         scrollView.backgroundColor = .clear
         scrollView.delegate = self
+    }
+    
+    private func setupUI() {
         view.addSubview(scrollView)
         scrollView.addSubview(recentVisitBoardButton)
         scrollView.addSubview(recentVisitBoardTableView)
@@ -88,30 +82,30 @@ class MainPageVC: UIViewController {
         
         recentVisitBoardButton.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.width.equalToSuperview().inset(16)
+            make.width.equalToSuperview().inset(8)
             make.height.equalTo(35)
             make.centerX.equalToSuperview()
         }
         
         recentVisitBoardTableView.snp.makeConstraints { make in
             make.top.equalTo(recentVisitBoardButton.snp.bottom).offset(4)
-            make.width.equalToSuperview().inset(16)
+            make.width.equalToSuperview().inset(8)
             make.height.equalTo(220)
             make.centerX.equalToSuperview()
         }
         
         livePostRankingButton.snp.makeConstraints { make in
             make.top.equalTo(recentVisitBoardTableView.snp.bottom).offset(4)
-            make.width.equalToSuperview().inset(16)
+            make.width.equalToSuperview().inset(8)
             make.height.equalTo(35)
             make.centerX.equalToSuperview()
         }
         
         livePostRankingTableView.snp.makeConstraints { make in
             make.top.equalTo(livePostRankingButton.snp.bottom).offset(4)
-            make.width.equalToSuperview().inset(16)
+            make.width.equalToSuperview().inset(8)
             make.bottom.equalTo(scrollView.snp.bottom)
-            make.height.equalTo(366)
+            make.height.equalTo(740)
             make.centerX.equalToSuperview()
         }
     }
@@ -122,7 +116,7 @@ extension MainPageVC : UITableViewDelegate, UITableViewDataSource {
         if tableView == recentVisitBoardTableView {
             return 5
         } else {
-            return 5
+            return 10
         }
     }
     
@@ -138,7 +132,7 @@ extension MainPageVC : UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.backgroundColor = .clear
-            cell.configure(streamerName: "잭뤼 ·", postTitle: "인기글이구먼유", userName: "동준뤼")
+            cell.configure(rankingNumber: indexPath.row + 1, streamerName: "잭 뤼 ·", postTitle: "인기글이구만유", userName: "이동준")
             return cell
         }
     }
