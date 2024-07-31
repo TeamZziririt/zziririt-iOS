@@ -42,6 +42,8 @@
 		DB104A912C5AA7EC006FF958 /* CommonPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A902C5AA7EC006FF958 /* CommonPostsVC.swift */; };
 		DB104A932C5AA824006FF958 /* CommonPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A922C5AA824006FF958 /* CommonPostsTableViewCell.swift */; };
 		DB104A952C5AA9F4006FF958 /* NoticeBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */; };
+		DB104A972C5ACCAA006FF958 /* MyLikedPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A962C5ACCAA006FF958 /* MyLikedPostsVC.swift */; };
+		DB104A992C5ACCCB006FF958 /* EventBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A982C5ACCCB006FF958 /* EventBoardVC.swift */; };
 		DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B362C52910000907D9C /* MainPageVC.swift */; };
 		DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */; };
 		DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */; };
@@ -105,6 +107,8 @@
 		DB104A902C5AA7EC006FF958 /* CommonPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPostsVC.swift; sourceTree = "<group>"; };
 		DB104A922C5AA824006FF958 /* CommonPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPostsTableViewCell.swift; sourceTree = "<group>"; };
 		DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardVC.swift; sourceTree = "<group>"; };
+		DB104A962C5ACCAA006FF958 /* MyLikedPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikedPostsVC.swift; sourceTree = "<group>"; };
+		DB104A982C5ACCCB006FF958 /* EventBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBoardVC.swift; sourceTree = "<group>"; };
 		DBDE6B362C52910000907D9C /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVisitBoardTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePostRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				DB104A902C5AA7EC006FF958 /* CommonPostsVC.swift */,
 				DB104A922C5AA824006FF958 /* CommonPostsTableViewCell.swift */,
 				DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */,
+				DB104A962C5ACCAA006FF958 /* MyLikedPostsVC.swift */,
+				DB104A982C5ACCCB006FF958 /* EventBoardVC.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -429,9 +435,11 @@
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
 				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
 				DB104A8C2C59E79D006FF958 /* MyPostsTableViewCell.swift in Sources */,
+				DB104A972C5ACCAA006FF958 /* MyLikedPostsVC.swift in Sources */,
 				BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */,
 				BDCD49462C521CC000CC05A3 /* CustomSegmentComponent.swift in Sources */,
 				DB104A8F2C5A04B1006FF958 /* Color.swift in Sources */,
+				DB104A992C5ACCCB006FF958 /* EventBoardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
