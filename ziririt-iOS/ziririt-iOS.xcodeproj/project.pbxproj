@@ -42,6 +42,7 @@
 		DBDE6B3F2C57ED3800907D9C /* StreamerSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3E2C57ED3800907D9C /* StreamerSearchVC.swift */; };
 		DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */; };
 		DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */; };
+		DBDE6B452C581B2400907D9C /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B442C581B2400907D9C /* MyPageVC.swift */; };
 		DBEE902D2C3FCFA40028E55F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBEE902C2C3FCFA40028E55F /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		DBDE6B3E2C57ED3800907D9C /* StreamerSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerSearchVC.swift; sourceTree = "<group>"; };
 		DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerSearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingSquareView.swift; sourceTree = "<group>"; };
+		DBDE6B442C581B2400907D9C /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */,
 				DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */,
 				DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */,
+				DBDE6B442C581B2400907D9C /* MyPageVC.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				BDB7234E2C41233400007A74 /* Font.swift in Sources */,
 				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
 				DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */,
+				DBDE6B452C581B2400907D9C /* MyPageVC.swift in Sources */,
 				DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */,
 				DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */,
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
