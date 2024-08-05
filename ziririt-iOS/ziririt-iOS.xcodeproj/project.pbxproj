@@ -36,6 +36,17 @@
 		BDF50BAA2C33FC3A003E396B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BA92C33FC3A003E396B /* RxCocoa */; };
 		BDF50BAC2C33FC3A003E396B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDF50BAB2C33FC3A003E396B /* RxSwift */; };
 		DB0C3D092C3D1FAB00E52FE1 /* NaverThirdPartyLogin in Frameworks */ = {isa = PBXBuildFile; productRef = DB0C3D082C3D1FAB00E52FE1 /* NaverThirdPartyLogin */; };
+		DB104A8A2C59E722006FF958 /* PostHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A892C59E722006FF958 /* PostHistoryVC.swift */; };
+		DB104A8C2C59E79D006FF958 /* PostHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A8B2C59E79D006FF958 /* PostHistoryTableViewCell.swift */; };
+		DB104A8F2C5A04B1006FF958 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A8E2C5A04B1006FF958 /* Color.swift */; };
+		DB104A912C5AA7EC006FF958 /* CommonMypageBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A902C5AA7EC006FF958 /* CommonMypageBoardVC.swift */; };
+		DB104A932C5AA824006FF958 /* CommonMypageBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A922C5AA824006FF958 /* CommonMypageBoardTableViewCell.swift */; };
+		DB104A952C5AA9F4006FF958 /* NoticeBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */; };
+		DB104A972C5ACCAA006FF958 /* LikedPostHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A962C5ACCAA006FF958 /* LikedPostHistoryVC.swift */; };
+		DB104A992C5ACCCB006FF958 /* EventBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A982C5ACCCB006FF958 /* EventBoardVC.swift */; };
+		DB104A9F2C5AD35F006FF958 /* CommentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A9E2C5AD35F006FF958 /* CommentHistoryVC.swift */; };
+		DB104AA12C5AD39F006FF958 /* LikedCommentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */; };
+		DB104AA32C5ADCBA006FF958 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104AA22C5ADCBA006FF958 /* SettingVC.swift */; };
 		DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B362C52910000907D9C /* MainPageVC.swift */; };
 		DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */; };
 		DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */; };
@@ -93,6 +104,17 @@
 		BDF50B922C33FB9A003E396B /* ziririt-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ziririt-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF50B962C33FB9A003E396B /* ziririt_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ziririt_iOSUITests.swift; sourceTree = "<group>"; };
 		BDF50B982C33FB9A003E396B /* ziririt_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ziririt_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB104A892C59E722006FF958 /* PostHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryVC.swift; sourceTree = "<group>"; };
+		DB104A8B2C59E79D006FF958 /* PostHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		DB104A8E2C5A04B1006FF958 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DB104A902C5AA7EC006FF958 /* CommonMypageBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMypageBoardVC.swift; sourceTree = "<group>"; };
+		DB104A922C5AA824006FF958 /* CommonMypageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMypageBoardTableViewCell.swift; sourceTree = "<group>"; };
+		DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardVC.swift; sourceTree = "<group>"; };
+		DB104A962C5ACCAA006FF958 /* LikedPostHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPostHistoryVC.swift; sourceTree = "<group>"; };
+		DB104A982C5ACCCB006FF958 /* EventBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBoardVC.swift; sourceTree = "<group>"; };
+		DB104A9E2C5AD35F006FF958 /* CommentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentHistoryVC.swift; sourceTree = "<group>"; };
+		DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCommentHistoryVC.swift; sourceTree = "<group>"; };
+		DB104AA22C5ADCBA006FF958 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		DBDE6B362C52910000907D9C /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVisitBoardTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePostRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -163,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB7234D2C41233400007A74 /* Font.swift */,
+				DB104A8E2C5A04B1006FF958 /* Color.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -181,6 +204,16 @@
 				DBDE6B402C57F56900907D9C /* StreamerSearchResultTableViewCell.swift */,
 				DBDE6B422C57F6DC00907D9C /* RankingSquareView.swift */,
 				DBDE6B442C581B2400907D9C /* MyPageVC.swift */,
+				DB104A892C59E722006FF958 /* PostHistoryVC.swift */,
+				DB104A8B2C59E79D006FF958 /* PostHistoryTableViewCell.swift */,
+				DB104A902C5AA7EC006FF958 /* CommonMypageBoardVC.swift */,
+				DB104A922C5AA824006FF958 /* CommonMypageBoardTableViewCell.swift */,
+				DB104A942C5AA9F4006FF958 /* NoticeBoardVC.swift */,
+				DB104A962C5ACCAA006FF958 /* LikedPostHistoryVC.swift */,
+				DB104A982C5ACCCB006FF958 /* EventBoardVC.swift */,
+				DB104A9E2C5AD35F006FF958 /* CommentHistoryVC.swift */,
+				DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */,
+				DB104AA22C5ADCBA006FF958 /* SettingVC.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -394,20 +427,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCD49402C51C77600CC05A3 /* StreamerVC.swift in Sources */,
+				DB104AA32C5ADCBA006FF958 /* SettingVC.swift in Sources */,
 				BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */,
+				DB104A932C5AA824006FF958 /* CommonMypageBoardTableViewCell.swift in Sources */,
+				DB104A8A2C59E722006FF958 /* PostHistoryVC.swift in Sources */,
 				BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */,
 				DBDE6B3F2C57ED3800907D9C /* StreamerSearchVC.swift in Sources */,
 				BDB7234E2C41233400007A74 /* Font.swift in Sources */,
 				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
 				DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */,
+				DB104A952C5AA9F4006FF958 /* NoticeBoardVC.swift in Sources */,
 				DBDE6B452C581B2400907D9C /* MyPageVC.swift in Sources */,
 				DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */,
 				DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */,
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
+				DB104A912C5AA7EC006FF958 /* CommonMypageBoardVC.swift in Sources */,
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
 				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
+				DB104A8C2C59E79D006FF958 /* PostHistoryTableViewCell.swift in Sources */,
+				DB104A9F2C5AD35F006FF958 /* CommentHistoryVC.swift in Sources */,
+				DB104A972C5ACCAA006FF958 /* LikedPostHistoryVC.swift in Sources */,
 				BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */,
 				BDCD49462C521CC000CC05A3 /* CustomSegmentComponent.swift in Sources */,
+				DB104AA12C5AD39F006FF958 /* LikedCommentHistoryVC.swift in Sources */,
+				DB104A8F2C5A04B1006FF958 /* Color.swift in Sources */,
+				DB104A992C5ACCCB006FF958 /* EventBoardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
