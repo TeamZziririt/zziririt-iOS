@@ -103,7 +103,7 @@ class ProfileSettingVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
         
         let placeholderAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.gray
+            .foregroundColor: UIColor.grayFontColor
         ]
         
         nickNameTextField.attributedPlaceholder = NSAttributedString(string: "기존 닉네임", attributes: placeholderAttributes)

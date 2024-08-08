@@ -53,10 +53,10 @@ class RankingSquareView: UIView {
         
         if 1...5 ~= number {
             numberLabel.textColor = .black
-            self.backgroundColor = .systemGreen
+            self.backgroundColor = .greenThemeColor
         } else {
             numberLabel.textColor = .white
-            self.backgroundColor = .darkGray
+            self.backgroundColor = .grayContentBackgroundColor
         }
     }
 }
