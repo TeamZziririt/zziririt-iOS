@@ -48,6 +48,7 @@
 		DB104AA12C5AD39F006FF958 /* LikedCommentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */; };
 		DB104AA32C5ADCBA006FF958 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104AA22C5ADCBA006FF958 /* SettingVC.swift */; };
 		DB8E17E12C6402D100396DCB /* ProfileSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */; };
+		DB2EAAB12C642FBD004D2259 /* NotificationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */; };
 		DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B362C52910000907D9C /* MainPageVC.swift */; };
 		DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */; };
 		DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */; };
@@ -117,6 +118,7 @@
 		DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCommentHistoryVC.swift; sourceTree = "<group>"; };
 		DB104AA22C5ADCBA006FF958 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingVC.swift; sourceTree = "<group>"; };
+		DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingVC.swift; sourceTree = "<group>"; };
 		DBDE6B362C52910000907D9C /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVisitBoardTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePostRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */,
 				DB104AA22C5ADCBA006FF958 /* SettingVC.swift */,
 				DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */,
+				DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				DBDE6B3F2C57ED3800907D9C /* StreamerSearchVC.swift in Sources */,
 				BDB7234E2C41233400007A74 /* Font.swift in Sources */,
 				BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */,
+				DB2EAAB12C642FBD004D2259 /* NotificationSettingVC.swift in Sources */,
 				DBDE6B432C57F6DC00907D9C /* RankingSquareView.swift in Sources */,
 				DB104A952C5AA9F4006FF958 /* NoticeBoardVC.swift in Sources */,
 				DBDE6B452C581B2400907D9C /* MyPageVC.swift in Sources */,
@@ -629,7 +633,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NNZY5VCJT4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ziririt-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -662,7 +665,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NNZY5VCJT4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ziririt-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
