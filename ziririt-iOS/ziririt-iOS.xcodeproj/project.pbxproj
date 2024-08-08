@@ -47,8 +47,9 @@
 		DB104A9F2C5AD35F006FF958 /* CommentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104A9E2C5AD35F006FF958 /* CommentHistoryVC.swift */; };
 		DB104AA12C5AD39F006FF958 /* LikedCommentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */; };
 		DB104AA32C5ADCBA006FF958 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB104AA22C5ADCBA006FF958 /* SettingVC.swift */; };
-		DB8E17E12C6402D100396DCB /* ProfileSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */; };
 		DB2EAAB12C642FBD004D2259 /* NotificationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */; };
+		DB8A07E72C65764000305C43 /* LoginInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A07E62C65764000305C43 /* LoginInfoVC.swift */; };
+		DB8E17E12C6402D100396DCB /* ProfileSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */; };
 		DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B362C52910000907D9C /* MainPageVC.swift */; };
 		DBDE6B392C52B54500907D9C /* RecentVisitBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */; };
 		DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */; };
@@ -117,8 +118,9 @@
 		DB104A9E2C5AD35F006FF958 /* CommentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentHistoryVC.swift; sourceTree = "<group>"; };
 		DB104AA02C5AD39F006FF958 /* LikedCommentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCommentHistoryVC.swift; sourceTree = "<group>"; };
 		DB104AA22C5ADCBA006FF958 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
-		DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingVC.swift; sourceTree = "<group>"; };
 		DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingVC.swift; sourceTree = "<group>"; };
+		DB8A07E62C65764000305C43 /* LoginInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoVC.swift; sourceTree = "<group>"; };
+		DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingVC.swift; sourceTree = "<group>"; };
 		DBDE6B362C52910000907D9C /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		DBDE6B382C52B54500907D9C /* RecentVisitBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVisitBoardTableViewCell.swift; sourceTree = "<group>"; };
 		DBDE6B3A2C52B69F00907D9C /* LivePostRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePostRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				DB104AA22C5ADCBA006FF958 /* SettingVC.swift */,
 				DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */,
 				DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */,
+				DB8A07E62C65764000305C43 /* LoginInfoVC.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
 				DB104A912C5AA7EC006FF958 /* CommonMypageBoardVC.swift in Sources */,
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
+				DB8A07E72C65764000305C43 /* LoginInfoVC.swift in Sources */,
 				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
 				DB104A8C2C59E79D006FF958 /* PostHistoryTableViewCell.swift in Sources */,
 				DB104A9F2C5AD35F006FF958 /* CommentHistoryVC.swift in Sources */,

@@ -101,6 +101,12 @@ class ProfileSettingVC: UIViewController {
     private func setView() {
         view.backgroundColor = .blackBackgroundColor
         navigationController?.navigationBar.isHidden = true
+        
+        let placeholderAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.gray
+        ]
+        
+        nickNameTextField.attributedPlaceholder = NSAttributedString(string: "기존 닉네임", attributes: placeholderAttributes)
     }
     
     private func setupUI() {
@@ -131,13 +137,6 @@ class ProfileSettingVC: UIViewController {
             make.top.equalTo(profileImageStackView.snp.bottom).offset(16)
             make.leading.trailing.equalToSuperview().inset(16)
         }
-        
-        
-        let placeholderAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.gray
-        ]
-        
-        nickNameTextField.attributedPlaceholder = NSAttributedString(string: "기존 닉네임", attributes: placeholderAttributes)
     }
 }
 
