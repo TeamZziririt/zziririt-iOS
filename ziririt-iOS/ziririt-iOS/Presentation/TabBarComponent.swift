@@ -13,7 +13,7 @@ protocol TabBarComponentDelegate: AnyObject {
     func tabBarComponent(_ tabBar: TabBarComponent, didSelectTabAt index: Int)
 }
 
-class TabBarComponent: UIStackView {
+final class TabBarComponent: UIStackView {
     
     enum TabBarStatus: Int {
         case home = 0
@@ -22,28 +22,30 @@ class TabBarComponent: UIStackView {
         case profile
     }
     
+    // MARK: - Component
+    
     private let horizontalStack: UIStackView = {
         let stack = UIStackView()
         stack.distribution = .fillEqually
         return stack
     }()
     
-    let homeIcon: UIButton = {
+    private let homeIcon: UIButton = {
         let imageView = UIButton()
         return imageView
     }()
     
-    let communityIcon: UIButton = {
+    private let communityIcon: UIButton = {
         let imageView = UIButton()
         return imageView
     }()
     
-    let searchIcon: UIButton = {
+    private let searchIcon: UIButton = {
         let imageView = UIButton()
         return imageView
     }()
     
-    let profileIcon: UIButton = {
+    private let profileIcon: UIButton = {
         let imageView = UIButton()
         return imageView
     }()
@@ -52,8 +54,12 @@ class TabBarComponent: UIStackView {
     private let topSpaceView = UIView()
     private let bottomSpaceView = UIView()
     
+    // MARK: - Properties
+    
     private let disposeBag = DisposeBag()
     weak var delegate: TabBarComponentDelegate?
+    
+    // MARK: - Initializer
     
     init() {
         super.init(frame: .zero)
@@ -66,12 +72,13 @@ class TabBarComponent: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Methods
+    
     private func bind() {
         for (index, button) in tabButtons.enumerated() {
             button.rx.tap
                 .subscribe(onNext: { [weak self] in
                     guard let self = self else { return }
-                    print("어떤 버튼 탭?\(index)")
                     self.delegate?.tabBarComponent(self, didSelectTabAt: index)
                 })
                 .disposed(by: disposeBag)

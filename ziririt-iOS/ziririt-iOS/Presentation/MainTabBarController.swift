@@ -8,9 +8,13 @@
 import UIKit
 import SnapKit
 
-class MainTabBarController: UITabBarController {
+final class MainTabBarController: UITabBarController {
+    
+    // MARK: - Component
     
     private let tabBarComponent = TabBarComponent()
+    
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,10 @@ class MainTabBarController: UITabBarController {
         connectCustomTabBar()
     }
     
-    func addTabItem() {
+    // MARK: - Methods
+    
+    /// 뷰 컨트롤을 등록합니다
+    private func addTabItem() {
         let vc1 = UINavigationController(rootViewController: UIViewController())
         let vc2 = UINavigationController(rootViewController: UIViewController())
         let vc3 = UINavigationController(rootViewController: UIViewController())
@@ -41,6 +48,7 @@ class MainTabBarController: UITabBarController {
         }
     }
     
+    /// tabBar Component의 역할을 맡도록 지정합니다
     private func connectCustomTabBar() {
         tabBarComponent.delegate = self
     }
