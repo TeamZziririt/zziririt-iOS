@@ -23,7 +23,7 @@ class StreamerSearchVC: UIViewController {
         searchBar.backgroundColor = .clear
         searchBar.backgroundImage = UIImage()
         if let textField = searchBar.value(forKey: "searchField") as? UITextField {
-               textField.backgroundColor = .darkGray
+               textField.backgroundColor = .grayContentBackgroundColor
                textField.textColor = .white
                textField.tintColor = .white
            }
@@ -60,7 +60,7 @@ class StreamerSearchVC: UIViewController {
         configuration.imagePadding = 8
         configuration.imagePlacement = .leading
         configuration.baseForegroundColor = .black
-        configuration.background.backgroundColor = .green
+        configuration.background.backgroundColor = .greenThemeColor
         configuration.background.cornerRadius = 8
 
         let button = UIButton(configuration: configuration, primaryAction: nil)

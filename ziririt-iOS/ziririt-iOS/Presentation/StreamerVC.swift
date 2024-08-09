@@ -61,7 +61,7 @@ final class StreamerVC: UIViewController, UIScrollViewDelegate {
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         tableView.layer.cornerRadius = 10
         tableView.clipsToBounds = true
-        tableView.backgroundColor = .darkGray
+        tableView.backgroundColor = .grayContentBackgroundColor
         tableView.register(NoticeBoardTableViewCell.self,
                            forCellReuseIdentifier: NoticeBoardTableViewCell.identifier)
         return tableView

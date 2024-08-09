@@ -17,7 +17,7 @@ class RecentVisitBoardTableViewCell: UITableViewCell {
     private lazy var streamerNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.textColor = .green
+        label.textColor = .greenThemeColor
         return label
     }()
     
@@ -25,14 +25,14 @@ class RecentVisitBoardTableViewCell: UITableViewCell {
         let label = UILabel()
         label.text = "구독자 수"
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.textColor = .gray
+        label.textColor = .grayFontColor
         return label
     }()
     
     private lazy var subscriberCountLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.textColor = .gray
+        label.textColor = .grayFontColor
         return label
     }()
     
