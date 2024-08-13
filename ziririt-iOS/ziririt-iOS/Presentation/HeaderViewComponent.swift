@@ -56,7 +56,9 @@ final class HeaderViewComponent: UIStackView {
     private func setUp(style: Style, title: String) {
         leftBarButton.setImage(UIImage(named: "return_icon"), for: .normal)
         titleLabel.text = title
+        titleLabel.textColor = .white
         titleLabel.font = .gFont(style: .bold, size: 18)
+        
         switch style {
         
         // 비어있는 경우
