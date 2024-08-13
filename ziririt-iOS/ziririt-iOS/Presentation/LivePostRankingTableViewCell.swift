@@ -91,7 +91,7 @@ class LivePostRankingTableViewCell: UITableViewCell {
     }
     
     private func setView() {
-        contentView.backgroundColor = .darkGray
+        contentView.backgroundColor = .grayContentBackgroundColor
         contentView.layer.cornerRadius = 15
     }
     

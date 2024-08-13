@@ -60,7 +60,7 @@ final class NoticeBoardTableViewCell: UITableViewCell {
     }
     
     private func setUp() {
-        contentView.backgroundColor = .darkGray
+        contentView.backgroundColor = .grayContentBackgroundColor
         titleLabel.textColor = .white
         dateLabel.textColor = .white
     }

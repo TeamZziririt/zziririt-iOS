@@ -58,6 +58,30 @@ class MyPageVC: UIViewController {
         return label
     }()
     
+    private lazy var profileStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [profileImageView, usernameLabel])
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.alignment = .center
+        return stackView
+    }()
+    
+    private lazy var historyButtonStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [myZziriritLabel, postsButton, commentsButton, likedPostsButton, likedCommentsButton])
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.alignment = .leading
+        return stackView
+    }()
+    
+    private lazy var buttonStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [zziriritNewsLabel, notificationsButton, eventsButton, iconShopButton, policyButton, reportButton])
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.alignment = .leading
+        return stackView
+    }()
+    
     private lazy var postsButton: UIButton = createButton(title: "내가 작성한 게시글", imageName: "posts_image")
     private lazy var commentsButton: UIButton = createButton(title: "내가 작성한 댓글", imageName: "comments_image")
     private lazy var likedPostsButton: UIButton = createButton(title: "내가 찌리릿한 게시글", imageName: "liked_posts_image")
@@ -66,7 +90,6 @@ class MyPageVC: UIViewController {
     private lazy var notificationsButton: UIButton = createButton(title: "공지사항", imageName: "notifications_image")
     private lazy var eventsButton: UIButton = createButton(title: "이벤트", imageName: "events_image")
     private lazy var iconShopButton: UIButton = createButton(title: "아이콘샵", imageName: "icon_shop_image")
-    
     private lazy var policyButton: UIButton = createButton(title: "약관 및 정책", imageName: nil)
     private lazy var reportButton: UIButton = createButton(title: "건의 / 신고", imageName: nil)
     
@@ -101,7 +124,6 @@ class MyPageVC: UIViewController {
             configuration.image = image
             configuration.imagePadding = 8
         }
-
         let button = UIButton(configuration: configuration)
         return button
     }
@@ -113,34 +135,22 @@ class MyPageVC: UIViewController {
     private func setupUI() {
         view.addSubview(scrollView)
         
-        scrollView.addSubview(profileImageView)
-        scrollView.addSubview(usernameLabel)
+        scrollView.addSubview(profileStackView)
         scrollView.addSubview(settingsButton)
-        scrollView.addSubview(myZziriritLabel)
-        scrollView.addSubview(postsButton)
-        scrollView.addSubview(commentsButton)
-        scrollView.addSubview(likedPostsButton)
-        scrollView.addSubview(likedCommentsButton)
-        scrollView.addSubview(zziriritNewsLabel)
-        scrollView.addSubview(notificationsButton)
-        scrollView.addSubview(eventsButton)
-        scrollView.addSubview(iconShopButton)
-        scrollView.addSubview(policyButton)
-        scrollView.addSubview(reportButton)
+        scrollView.addSubview(historyButtonStackView)
+        scrollView.addSubview(buttonStackView)
         
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
 
         profileImageView.snp.makeConstraints { make in
-            make.top.equalTo(scrollView.contentLayoutGuide).offset(16)
-            make.centerX.equalToSuperview()
             make.size.equalTo(128)
         }
 
-        usernameLabel.snp.makeConstraints { make in
-            make.top.equalTo(profileImageView.snp.bottom).offset(24)
-            make.centerX.equalTo(scrollView.frameLayoutGuide)
+        profileStackView.snp.makeConstraints { make in
+            make.top.equalTo(scrollView.contentLayoutGuide).offset(16)
+            make.centerX.equalToSuperview()
         }
 
         settingsButton.snp.makeConstraints { make in
@@ -149,60 +159,16 @@ class MyPageVC: UIViewController {
             make.size.equalTo(24)
         }
 
-        myZziriritLabel.snp.makeConstraints { make in
+        historyButtonStackView.snp.makeConstraints { make in
             make.top.equalTo(usernameLabel.snp.bottom).offset(16)
             make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
         }
         
-        postsButton.snp.makeConstraints { make in
-            make.top.equalTo(myZziriritLabel.snp.bottom).offset(16)
+        buttonStackView.snp.makeConstraints { make in
+            make.top.equalTo(historyButtonStackView.snp.bottom).offset(24)
             make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
         }
         
-        commentsButton.snp.makeConstraints { make in
-            make.top.equalTo(postsButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
         
-        likedPostsButton.snp.makeConstraints { make in
-            make.top.equalTo(commentsButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        likedCommentsButton.snp.makeConstraints { make in
-            make.top.equalTo(likedPostsButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        zziriritNewsLabel.snp.makeConstraints { make in
-            make.top.equalTo(likedCommentsButton.snp.bottom).offset(24)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        notificationsButton.snp.makeConstraints { make in
-            make.top.equalTo(zziriritNewsLabel.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        eventsButton.snp.makeConstraints { make in
-            make.top.equalTo(notificationsButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        iconShopButton.snp.makeConstraints { make in
-            make.top.equalTo(eventsButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        policyButton.snp.makeConstraints { make in
-            make.top.equalTo(iconShopButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-        }
-        
-        reportButton.snp.makeConstraints { make in
-            make.top.equalTo(policyButton.snp.bottom).offset(16)
-            make.leading.equalTo(scrollView.contentLayoutGuide).offset(8)
-            make.bottom.equalTo(scrollView.contentLayoutGuide).offset(-16)
-        }
     }
 }
