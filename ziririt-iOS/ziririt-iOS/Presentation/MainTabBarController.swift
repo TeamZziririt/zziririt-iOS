@@ -18,9 +18,12 @@ final class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-        addTabItem()
         connectCustomTabBar()
+    }
+    
+    override func viewIsAppearing(_ animated: Bool) {
+        addTabItem()
+        setupUI()
     }
     
     // MARK: - Methods
@@ -30,13 +33,12 @@ final class MainTabBarController: UITabBarController {
         let vc1 = UINavigationController(rootViewController: UIViewController())
         let vc2 = UINavigationController(rootViewController: UIViewController())
         let vc3 = UINavigationController(rootViewController: UIViewController())
-        let vc4 = UINavigationController(rootViewController: UIViewController())
-        vc1.view.backgroundColor = .blue
+        let profilePage = UINavigationController(rootViewController: MyPageVC())
+        vc1.view.backgroundColor = .green
         vc2.view.backgroundColor = .red
         vc3.view.backgroundColor = .blue
-        vc4.view.backgroundColor = .green
         
-        setViewControllers([vc1, vc2, vc3, vc4], animated: true)
+        setViewControllers([vc1, vc2, vc3, profilePage], animated: true)
     }
     
     private func setupUI() {
