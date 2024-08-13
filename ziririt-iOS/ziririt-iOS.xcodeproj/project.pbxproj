@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0C4FB32C6B1DE100A023D7 /* DetailContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C4FB22C6B1DE100A023D7 /* DetailContentVC.swift */; };
+		BD0C4FB52C6B1DF700A023D7 /* DetailContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C4FB42C6B1DF700A023D7 /* DetailContentVM.swift */; };
 		BD9D09B92C5BE7CD00A4FECC /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D09B82C5BE7CD00A4FECC /* TabBarComponent.swift */; };
 		BDB7233C2C41219600007A74 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723332C41219600007A74 /* Pretendard-ExtraBold.otf */; };
 		BDB7233D2C41219600007A74 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDB723342C41219600007A74 /* Pretendard-Black.otf */; };
@@ -80,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD0C4FB22C6B1DE100A023D7 /* DetailContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentVC.swift; sourceTree = "<group>"; };
+		BD0C4FB42C6B1DF700A023D7 /* DetailContentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentVM.swift; sourceTree = "<group>"; };
 		BD9D09B82C5BE7CD00A4FECC /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
 		BDB723332C41219600007A74 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		BDB723342C41219600007A74 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */,
 				DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */,
 				DB8A07E62C65764000305C43 /* LoginInfoVC.swift */,
+				BD0C4FB22C6B1DE100A023D7 /* DetailContentVC.swift */,
+				BD0C4FB42C6B1DF700A023D7 /* DetailContentVM.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -460,10 +466,12 @@
 				DBDE6B3B2C52B69F00907D9C /* LivePostRankingTableViewCell.swift in Sources */,
 				DB8E17E12C6402D100396DCB /* ProfileSettingVC.swift in Sources */,
 				BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */,
+				BD0C4FB52C6B1DF700A023D7 /* DetailContentVM.swift in Sources */,
 				DB104A912C5AA7EC006FF958 /* CommonMypageBoardVC.swift in Sources */,
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
 				DB8A07E72C65764000305C43 /* LoginInfoVC.swift in Sources */,
 				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
+				BD0C4FB32C6B1DE100A023D7 /* DetailContentVC.swift in Sources */,
 				DB104A8C2C59E79D006FF958 /* PostHistoryTableViewCell.swift in Sources */,
 				DB104A9F2C5AD35F006FF958 /* CommentHistoryVC.swift in Sources */,
 				DB104A972C5ACCAA006FF958 /* LikedPostHistoryVC.swift in Sources */,
