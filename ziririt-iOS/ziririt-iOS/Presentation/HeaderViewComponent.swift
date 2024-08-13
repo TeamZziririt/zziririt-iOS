@@ -18,6 +18,8 @@ final class HeaderViewComponent: UIStackView {
         case optionalRight(String, String?)
     }
     
+    //MARK: - Component
+    
     let leftBarButton: UIButton = {
         let button = UIButton()
         return button
@@ -43,6 +45,8 @@ final class HeaderViewComponent: UIStackView {
     private let rightContainerView = UIView()
     private let optionalContainerView = UIView()
     
+    //MARK: - Initializer
+    
     init(style: Style, title: String) {
         super.init(frame: .zero)
         setUpConstraint()
@@ -52,6 +56,8 @@ final class HeaderViewComponent: UIStackView {
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - Methods
     
     private func setUp(style: Style, title: String) {
         leftBarButton.setImage(UIImage(named: "return_icon"), for: .normal)
