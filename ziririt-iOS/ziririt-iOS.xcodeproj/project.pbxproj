@@ -24,6 +24,7 @@
 		BDCD49422C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */; };
 		BDCD49442C51EBD700CC05A3 /* BoardTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */; };
 		BDCD49462C521CC000CC05A3 /* CustomSegmentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */; };
+		BDD3AB752C666C4800934368 /* HeaderViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD3AB742C666C4800934368 /* HeaderViewComponent.swift */; };
 		BDF50B762C33FB98003E396B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B752C33FB98003E396B /* AppDelegate.swift */; };
 		BDF50B782C33FB98003E396B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B772C33FB98003E396B /* SceneDelegate.swift */; };
 		BDF50B7A2C33FB98003E396B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF50B792C33FB98003E396B /* ViewController.swift */; };
@@ -95,6 +96,7 @@
 		BDCD49412C51CB0500CC05A3 /* NoticeBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardTableViewCell.swift; sourceTree = "<group>"; };
 		BDCD49432C51EBD700CC05A3 /* BoardTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewHeader.swift; sourceTree = "<group>"; };
 		BDCD49452C521CC000CC05A3 /* CustomSegmentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentComponent.swift; sourceTree = "<group>"; };
+		BDD3AB742C666C4800934368 /* HeaderViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewComponent.swift; sourceTree = "<group>"; };
 		BDF50B722C33FB98003E396B /* ziririt-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ziririt-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF50B752C33FB98003E396B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF50B772C33FB98003E396B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				DB8E17E02C6402D100396DCB /* ProfileSettingVC.swift */,
 				DB2EAAB02C642FBD004D2259 /* NotificationSettingVC.swift */,
 				DB8A07E62C65764000305C43 /* LoginInfoVC.swift */,
+				BDD3AB742C666C4800934368 /* HeaderViewComponent.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				DBDE6B372C52910000907D9C /* MainPageVC.swift in Sources */,
 				DB8A07E72C65764000305C43 /* LoginInfoVC.swift in Sources */,
 				DBDE6B412C57F56900907D9C /* StreamerSearchResultTableViewCell.swift in Sources */,
+				BDD3AB752C666C4800934368 /* HeaderViewComponent.swift in Sources */,
 				DB104A8C2C59E79D006FF958 /* PostHistoryTableViewCell.swift in Sources */,
 				DB104A9F2C5AD35F006FF958 /* CommentHistoryVC.swift in Sources */,
 				DB104A972C5ACCAA006FF958 /* LikedPostHistoryVC.swift in Sources */,
